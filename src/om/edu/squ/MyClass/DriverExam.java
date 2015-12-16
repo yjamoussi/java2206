@@ -11,6 +11,7 @@ package om.edu.squ.MyClass;
 
 public  class DriverExam {
     private  char[] answ= new char[20];
+    // comment added
     
     private  char[] correctanswere={'C','D','A','A','C','A','B','A','C','D',
         'B','C','D','A','D','C','C','A','D','D'}; 
