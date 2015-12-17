@@ -8,14 +8,20 @@ package om.edu.squ.MyClass;
  *
  * @author Solution
  */
+
 public class DriverExam {
 
     private char[] userAnswers;
-    // comment added
+    // user's answers
 
-    private char[] correctAnswers = {'C', 'D', 'A', 'A', 'C', 'A', 'B', 'A', 'C', 'D',
-        'B', 'C', 'D', 'A', 'D', 'C', 'C', 'A', 'D', 'D'};
+    private char[] correctAnswers = {
+        'C', 'D', 'A', 'A', 'C', 
+        'A', 'B', 'A', 'C', 'D',
+        'B', 'C', 'D', 'A', 'D', 
+        'C', 'C', 'A', 'D', 'D'
+    };
 
+    
     // Q1-a 
     public DriverExam(char[] ua) {
 
@@ -27,6 +33,7 @@ public class DriverExam {
 
     }
 
+    
     // Q1-b
     public boolean passed() {
         if (totalCorrect() >= 15) {
@@ -36,10 +43,13 @@ public class DriverExam {
         }
     }
 
+    
     // Q1-c
     public int totalCorrect() {
         int true_Answ_Count = 0;
-        for (int i = 0; ((i < userAnswers.length) && (i < userAnswers.length)); i++) {
+        for (int i = 0; 
+                ((i < userAnswers.length) && (i < userAnswers.length)); 
+                i++) {
             if (userAnswers[i] == correctAnswers[i]) {
                 true_Answ_Count++;
             }

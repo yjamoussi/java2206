@@ -17,10 +17,10 @@ public class DriverExamClient {
             'B', 'C', 'D', 'D', 'D', 'C', 'C', 'A', 'A', 'D'};
         
         //
-        DriverExam candidateDriverEaxam = new DriverExam(user_answers);
+        DriverExam candidateDriverExam = new DriverExam(user_answers);
         
         // Q2-c 1)
-        if (candidateDriverEaxam.passed()) {
+        if (candidateDriverExam.passed()) {
             System.out.println("Result : passed");
         } else {
             System.out.println("Result : Failed");
@@ -28,10 +28,10 @@ public class DriverExamClient {
         
         // Q2-c 2)
         System.out.println("Number of correctly answered questions:" +
-                candidateDriverEaxam.totalCorrect());
+                candidateDriverExam.totalCorrect());
         
         // Q2-c 3)
-        int[] missedQuestion = candidateDriverEaxam.questionMissed();
+        int[] missedQuestion = candidateDriverExam.questionMissed();
         System.out.print("The question(s) that candidate missed :");
         for (int i = 0; i < missedQuestion.length; i++) {
             System.out.print(missedQuestion[i] + " ");
